@@ -1,0 +1,10 @@
+[project]
+name = "ai-engineer-journey"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.116.0",
+    "openai>=2.44.0",
+    "python-dotenv>=1.2.2",
+]
