@@ -1,0 +1,2 @@
+how attention works for llms, 
+difference in http raw calls and sdk calls. prefer sdk calls it handles crucial error handling by itself instead of writiing it manually.
