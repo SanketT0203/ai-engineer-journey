@@ -1,0 +1,390 @@
+[
+  {
+    "title": "AI Engineer (m/w/d) für Chat-to-CAD / LLM, Agents und multimodale Eingaben",
+    "description_excerpt": "Du liebst es, mit Sprachmodellen zu arbeiten und komplexe Probleme zu lösen? Willkommen bei CADAICO, der Heimat für neugierige Entwickler:innen, KI-Nerds, Geeks und Engineering Talente. # Es werden nur Bewerbungen mit Anschreiben berücksichtigt. # Ein großer Teil unserer Arbeit ist, aus sehr untersc",
+    "naive": {
+      "title": "AI Engineer (m/w/d) für Chat-to-CAD / LLM, Agents und multimodale Eingaben",
+      "company": "Cadaico GmbH",
+      "location": "Stuttgart",
+      "seniority": "mid",
+      "skills": [
+        "Python",
+        "Large Language Models (LLM)",
+        "AI Agents",
+        "Multimodal AI",
+        "System Prompts",
+        "Knowledge Bases",
+        "Tool Use",
+        "Function Calling",
+        "Retrieval-Augmented Generation (RAG)",
+        "Error Handling",
+        "Software Engineering"
+      ],
+      "salary_min": null,
+      "salary_max": null,
+      "german_required": true,
+      "visa_sponsorship": null,
+      "url": null
+    },
+    "guarded": {
+      "title": "AI Engineer (m/w/d) für Chat-to-CAD / LLM, Agents und multimodale Eingaben",
+      "company": "Cadaico GmbH",
+      "location": "Stuttgart",
+      "seniority": "mid",
+      "skills": [
+        "Python",
+        "LLM",
+        "AI Agents",
+        "Prompt Engineering",
+        "Function Calling",
+        "Tool Use",
+        "Multimodal AI",
+        "Retrieval Systems",
+        "System Design"
+      ],
+      "salary_min": null,
+      "salary_max": null,
+      "german_required": true,
+      "visa_sponsorship": null,
+      "url": null
+    },
+    "flags": [
+      {
+        "schema": "NAIVE",
+        "salary_flag": null,
+        "german_flag": "LIKELY GUESSED — german_required=True but no related keyword found in description",
+        "visa_flag": null,
+        "unverified_skills": [
+          "Large Language Models (LLM)",
+          "AI Agents",
+          "Multimodal AI",
+          "System Prompts",
+          "Knowledge Bases",
+          "Retrieval-Augmented Generation (RAG)",
+          "Error Handling",
+          "Software Engineering"
+        ]
+      },
+      {
+        "schema": "GUARDED",
+        "salary_flag": null,
+        "german_flag": "LIKELY GUESSED — german_required=True but no related keyword found in description",
+        "visa_flag": null,
+        "unverified_skills": [
+          "AI Agents",
+          "Prompt Engineering",
+          "Multimodal AI",
+          "Retrieval Systems",
+          "System Design"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Product Manager Agentic AI Education (m/w/d)",
+    "description_excerpt": "Agentic AI ist deine Welt – und du willst dich damit beschäftigen, statt ständig etwas verkaufen zu müssen? Du hast dich intensiv mit KI-Agenten beschäftigt, eigene Workflows oder Anwendungen gebaut und kennst Themen wie n8n, Make, APIs, Tool Calling, RAG, Vektordatenbanken oder MCP aus der Praxis? ",
+    "naive": {
+      "title": "Product Manager Agentic AI Education (m/w/d)",
+      "company": "AI Transformation Institute",
+      "location": "Berlin",
+      "seniority": "mid",
+      "skills": [
+        "Agentic AI",
+        "n8n",
+        "Make",
+        "APIs",
+        "Tool Calling",
+        "RAG",
+        "Vector Databases",
+        "MCP",
+        "Instructional Design",
+        "Content Development",
+        "Product Management",
+        "AI Tools",
+        "Workflow Automation"
+      ],
+      "salary_min": null,
+      "salary_max": null,
+      "german_required": true,
+      "visa_sponsorship": null,
+      "url": null
+    },
+    "guarded": {
+      "title": "Product Manager Agentic AI Education (m/w/d)",
+      "company": "AI Transformation Institute",
+      "location": "Berlin",
+      "seniority": "junior",
+      "skills": [
+        "Agentic AI",
+        "n8n",
+        "Make",
+        "APIs",
+        "Tool Calling",
+        "RAG",
+        "Vector Databases",
+        "MCP",
+        "Instructional Design",
+        "Content Development",
+        "Product Development"
+      ],
+      "salary_min": null,
+      "salary_max": null,
+      "german_required": true,
+      "visa_sponsorship": null,
+      "url": null
+    },
+    "flags": [
+      {
+        "schema": "NAIVE",
+        "salary_flag": null,
+        "german_flag": null,
+        "visa_flag": null,
+        "unverified_skills": [
+          "Vector Databases",
+          "Content Development",
+          "Product Management",
+          "AI Tools",
+          "Workflow Automation"
+        ]
+      },
+      {
+        "schema": "GUARDED",
+        "salary_flag": null,
+        "german_flag": null,
+        "visa_flag": null,
+        "unverified_skills": [
+          "Vector Databases",
+          "Content Development",
+          "Product Development"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "(Senior) AI Engineer & Technical Project Lead (Köln) (w/d/m)",
+    "description_excerpt": "Wir sind WE BUILD AI, eine AI-Boutique aus Köln. Wir bauen Data- und AI-Solutions für den Mittelstand und Konzerne in Deutschland. Bei uns entstehen Systeme, die in Produktion gehen und Geld verdienen oder sparen. PoCs für die Schublade machen andere. Wir bauen hier ein Unternehmen, das in den nächs",
+    "naive": {
+      "title": "Senior AI Engineer & Technical Project Lead",
+      "company": "WEBUILDAI GmbH",
+      "location": "Cologne",
+      "seniority": "senior",
+      "skills": [
+        "Python",
+        "Machine Learning",
+        "Large Language Models",
+        "LLM",
+        "RAG",
+        "Agentic Workflows",
+        "FastAPI",
+        "Backend Development",
+        "APIs",
+        "Microsoft Azure",
+        "AWS",
+        "GCP",
+        "Cloud Platforms",
+        "Project Management",
+        "Technical Leadership",
+        "System Architecture",
+        "Deployment",
+        "Testing",
+        "Monitoring"
+      ],
+      "salary_min": null,
+      "salary_max": null,
+      "german_required": true,
+      "visa_sponsorship": null,
+      "url": null
+    },
+    "guarded": {
+      "title": "(Senior) AI Engineer & Technical Project Lead",
+      "company": "WEBUILDAI GmbH",
+      "location": "Cologne",
+      "seniority": "senior",
+      "skills": [
+        "Python",
+        "FastAPI",
+        "Machine Learning",
+        "Large Language Models",
+        "LLM",
+        "RAG",
+        "Agentic Workflows",
+        "Microsoft Azure",
+        "AWS",
+        "GCP",
+        "Backend Services",
+        "APIs",
+        "Cloud AI Services"
+      ],
+      "salary_min": null,
+      "salary_max": null,
+      "german_required": true,
+      "visa_sponsorship": null,
+      "url": null
+    },
+    "flags": [
+      {
+        "schema": "NAIVE",
+        "salary_flag": null,
+        "german_flag": null,
+        "visa_flag": null,
+        "unverified_skills": [
+          "Machine Learning",
+          "Backend Development",
+          "Cloud Platforms",
+          "Project Management",
+          "Technical Leadership",
+          "System Architecture",
+          "Testing"
+        ]
+      },
+      {
+        "schema": "GUARDED",
+        "salary_flag": null,
+        "german_flag": null,
+        "visa_flag": null,
+        "unverified_skills": [
+          "Machine Learning",
+          "Backend Services",
+          "Cloud AI Services"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Senior AI Engineer",
+    "description_excerpt": "At 5Plus , we build production-grade AI systems that solve real operational problems for our customers. As a Senior AI Engineer (m/f/d), you will take technical responsibility for customer-facing AI solutions — from early design decisions to production deployment and operation. You will design, buil",
+    "naive": {
+      "title": "Senior AI Engineer",
+      "company": "Pentadoc Gruppe",
+      "location": "Würzburg",
+      "seniority": "senior",
+      "skills": [
+        "Python",
+        "AI/ML systems",
+        "LLM",
+        "RAG",
+        "Agentic AI",
+        "Machine Learning",
+        "Production deployment",
+        "Cloud deployment",
+        "AWS",
+        "Azure"
+      ],
+      "salary_min": null,
+      "salary_max": null,
+      "german_required": true,
+      "visa_sponsorship": null,
+      "url": null
+    },
+    "guarded": {
+      "title": "Senior AI Engineer",
+      "company": "Pentadoc Gruppe",
+      "location": "Würzburg",
+      "seniority": "senior",
+      "skills": [
+        "Python",
+        "AI/ML systems",
+        "LLM",
+        "RAG",
+        "Agentic AI",
+        "Embeddings",
+        "AWS",
+        "Azure",
+        "Tool orchestration"
+      ],
+      "salary_min": null,
+      "salary_max": null,
+      "german_required": true,
+      "visa_sponsorship": false,
+      "url": null
+    },
+    "flags": [
+      {
+        "schema": "NAIVE",
+        "salary_flag": null,
+        "german_flag": null,
+        "visa_flag": null,
+        "unverified_skills": [
+          "Machine Learning",
+          "Cloud deployment"
+        ]
+      },
+      {
+        "schema": "GUARDED",
+        "salary_flag": null,
+        "german_flag": null,
+        "visa_flag": "LIKELY GUESSED — visa_sponsorship=False but no related keyword found in description",
+        "unverified_skills": []
+      }
+    ]
+  },
+  {
+    "title": "Principal Machine Learning Engineer (f/m/x)",
+    "description_excerpt": "Your Mission This is a company built for growth. When you join exmox, you're stepping into a high-velocity environment where data is not just analyzed but turned into systems that directly drive business performance. You will operate at the intersection of data, engineering, and product, solving rea",
+    "naive": {
+      "title": "Principal Machine Learning Engineer (f/m/x)",
+      "company": "exmox GmbH",
+      "location": "Hamburg",
+      "seniority": "lead",
+      "skills": [
+        "Machine Learning",
+        "Python",
+        "Data Engineering",
+        "ML Infrastructure",
+        "Model Deployment",
+        "Data Pipelines",
+        "Production Systems",
+        "Data Science"
+      ],
+      "salary_min": null,
+      "salary_max": null,
+      "german_required": null,
+      "visa_sponsorship": null,
+      "url": null
+    },
+    "guarded": {
+      "title": "Principal Machine Learning Engineer (f/m/x)",
+      "company": "exmox GmbH",
+      "location": "Hamburg",
+      "seniority": "lead",
+      "skills": [
+        "Machine Learning",
+        "ML Systems",
+        "Model Deployment",
+        "Data Pipelines",
+        "Feature Engineering",
+        "Model Monitoring",
+        "Production ML"
+      ],
+      "salary_min": null,
+      "salary_max": null,
+      "german_required": null,
+      "visa_sponsorship": null,
+      "url": null
+    },
+    "flags": [
+      {
+        "schema": "NAIVE",
+        "salary_flag": null,
+        "german_flag": null,
+        "visa_flag": null,
+        "unverified_skills": [
+          "Python",
+          "Production Systems"
+        ]
+      },
+      {
+        "schema": "GUARDED",
+        "salary_flag": null,
+        "german_flag": null,
+        "visa_flag": null,
+        "unverified_skills": [
+          "ML Systems",
+          "Feature Engineering",
+          "Model Monitoring",
+          "Production ML"
+        ]
+      }
+    ]
+  }
+]
