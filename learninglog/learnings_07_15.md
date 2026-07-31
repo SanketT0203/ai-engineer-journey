@@ -19,3 +19,11 @@ would apply automatically. The model doesn't know your edge cases unless you tel
 
 All of these accuracies were tested at temperature=0 because I didn't want to test
 the variety of outputs, I wanted the deterministic ones.
+
+
+Built the manual agent loop: give the model a `tools` schema (calculator,
+get_current_time, search_jobs), send `messages`, check `response.stop_reason`. If
+it's `"tool_use"`, the response contains one or more `tool_use` blocks — I execute
+the REAL Python function myself, wrap the result as a `tool_result` block matched by
+`tool_use_id`, append it as a new user-role message, and loop again. Only stop when
+`stop_reason` is something other than `tool_use`.

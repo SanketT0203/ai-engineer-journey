@@ -11,4 +11,5 @@ dependencies = [
     "openai>=2.44.0",
     "pydantic>=2.13.4",
     "python-dotenv>=1.2.2",
+    "sentence-transformers>=5.6.1",
 ]
