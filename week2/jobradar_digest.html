@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JobRadar Digest — 2026-08-07</title>
+<style>
+  /* Vars live on :root/body, not .viz-root -- body's own `background:
+     var(--page)` rule needs to READ these, and CSS custom properties only
+     inherit DOWNWARD to descendants, never upward from a child to its
+     parent. Scoping them to .viz-root (a child of body) left body's
+     background unable to see the dark-mode override -- confirmed visually
+     via a Playwright screenshot before shipping, page background stayed
+     white while cards correctly went dark. */
+  :root {
+    --surface-1: #fcfcfb; --page: #f9f9f7;
+    --text-primary: #0b0b0b; --text-secondary: #52514e; --text-muted: #898781;
+    --gridline: #e1e0d9; --border: rgba(11,11,11,0.10);
+    --seq-fill: #2a78d6; --seq-track: #cde2fb;
+    --status-good: #0ca30c; --status-good-bg: #e5f5e5;
+    --status-warn: #c98500; --status-warn-bg: #fdf1d9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --surface-1: #1a1a19; --page: #0d0d0d;
+      --text-primary: #ffffff; --text-secondary: #c3c2b7; --text-muted: #898781;
+      --gridline: #2c2c2a; --border: rgba(255,255,255,0.10);
+      --seq-fill: #3987e5; --seq-track: #184f95;
+      --status-good: #0ca30c; --status-good-bg: #14311a;
+      --status-warn: #eda100; --status-warn-bg: #3a2c0c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--page); color: var(--text-primary); }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  header { margin-bottom: 28px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--text-secondary); font-size: 14px; margin: 0; }
+  .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; margin-bottom: 14px; }
+  .card-top { display:flex; justify-content: space-between; gap: 16px; align-items: flex-start; }
+  h2 { font-size: 16px; margin: 0 0 4px; }
+  h2 a { color: var(--text-primary); text-decoration: none; }
+  h2 a:hover { text-decoration: underline; }
+  .meta { color: var(--text-secondary); font-size: 13px; margin: 0; }
+  .source { color: var(--text-muted); text-transform: uppercase; font-size: 11px; letter-spacing: 0.04em; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; margin-bottom: 6px; letter-spacing: 0.01em; }
+  .badge-student { color: var(--status-good); background: var(--status-good-bg); }
+  .badge-fulltime { color: var(--text-muted); background: var(--gridline); }
+  .score-block { flex-shrink:0; width: 140px; text-align: right; }
+  .score-value { font-size: 20px; font-weight: 600; font-variant-numeric: proportional-nums; }
+  .meter { height: 6px; border-radius: 3px; background: var(--seq-track); margin: 6px 0 4px; overflow: hidden; }
+  .meter-fill { height: 100%; background: var(--seq-fill); border-radius: 3px; }
+  .score-breakdown { font-size: 11px; color: var(--text-muted); }
+  .pills { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .pill { font-size: 12px; padding: 3px 9px; border-radius: 999px; background: var(--gridline); color: var(--text-secondary); }
+  .pill-skill { background: transparent; border: 1px solid var(--gridline); }
+  .cost-ok { color: var(--status-good); font-weight: 600; }
+  .cost-over { color: var(--status-warn); font-weight: 600; }
+  footer { color: var(--text-muted); font-size: 12px; margin-top: 24px; }
+</style>
+</head>
+<body>
+<div class="viz-root wrap">
+  <header>
+    <h1>JobRadar — Daily Digest</h1>
+    <p class="sub">20 new postings · generated 2026-08-07T13:05:52+00:00 · run cost €0.0457 · <span class='cost-ok'>✓ under the €0.05/day target</span></p>
+  </header>
+  
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.com/jobs/companies/all-your-bi/lead-ai-engineer-berlin-18369" target="_blank" rel="noopener">Lead AI Engineer</a></h2>
+              <p class="meta">All Your BI · Berlin · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">43%</div>
+              <div class="meter"><div class="meter-fill" style="width:43%"></div></div>
+              <div class="score-breakdown">skills 38% · semantic 48%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill'>€88,800–€110,400/yr</span><span class='pill pill-skill'>AI</span><span class='pill pill-skill'>GenAI</span><span class='pill pill-skill'>LLM</span><span class='pill pill-skill'>RAG</span><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Production Systems</span><span class='pill pill-skill'>Observability</span><span class='pill pill-skill'>Prompt Engineering</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.com/jobs/companies/capco/senior-genai-engineer-84728" target="_blank" rel="noopener">(Senior) GenAI Engineer</a></h2>
+              <p class="meta">capco · Frankfurt am Main, Düsseldorf, Berlin · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">42%</div>
+              <div class="meter"><div class="meter-fill" style="width:42%"></div></div>
+              <div class="score-breakdown">skills 38% · semantic 47%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill'>German required</span><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>GenAI</span><span class='pill pill-skill'>LLMs</span><span class='pill pill-skill'>Vector Search</span><span class='pill pill-skill'>Angular</span><span class='pill pill-skill'>React</span><span class='pill pill-skill'>Document Processing</span><span class='pill pill-skill'>Embeddings</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.com/jobs/companies/clera/applied-ai-engineer-ai-automation-berlin-228748" target="_blank" rel="noopener">Applied AI Engineer – AI & Automation</a></h2>
+              <p class="meta">Clera · Berlin, Germany · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">35%</div>
+              <div class="meter"><div class="meter-fill" style="width:35%"></div></div>
+              <div class="score-breakdown">skills 20% · semantic 50%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>TypeScript</span><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>AI</span><span class='pill pill-skill'>Automation</span><span class='pill pill-skill'>Machine Learning</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.com/jobs/companies/clera/applied-ai-engineer-ai-automation-berlin-228748" target="_blank" rel="noopener">Applied AI Engineer – AI & Automation</a></h2>
+              <p class="meta">Clera · Berlin, Germany · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">35%</div>
+              <div class="meter"><div class="meter-fill" style="width:35%"></div></div>
+              <div class="score-breakdown">skills 20% · semantic 50%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>TypeScript</span><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>AI</span><span class='pill pill-skill'>Automation</span><span class='pill pill-skill'>Machine Learning</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.com/jobs/companies/clera/ml-engineer-agents-reasoning-berlin-123289" target="_blank" rel="noopener">ML Engineer, Agents & Reasoning</a></h2>
+              <p class="meta">Clera · Berlin · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">34%</div>
+              <div class="meter"><div class="meter-fill" style="width:34%"></div></div>
+              <div class="score-breakdown">skills 25% · semantic 43%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Agentic AI</span><span class='pill pill-skill'>Planning</span><span class='pill pill-skill'>Decision-making systems</span><span class='pill pill-skill'>Scientific data modeling</span><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>Robotics</span><span class='pill pill-skill'>Materials science</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.com/jobs/companies/clera/ml-engineer-agents-reasoning-berlin-123289" target="_blank" rel="noopener">ML Engineer, Agents & Reasoning</a></h2>
+              <p class="meta">Clera · Berlin · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">34%</div>
+              <div class="meter"><div class="meter-fill" style="width:34%"></div></div>
+              <div class="score-breakdown">skills 25% · semantic 43%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Agentic AI</span><span class='pill pill-skill'>Planning</span><span class='pill pill-skill'>Decision-making systems</span><span class='pill pill-skill'>Scientific data modeling</span><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>Robotics</span><span class='pill pill-skill'>Materials science</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.co.uk/jobs/companies/waymo/machine-learning-engineer-london-134903" target="_blank" rel="noopener">Machine Learning Engineer</a></h2>
+              <p class="meta">Waymo · London · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">34%</div>
+              <div class="meter"><div class="meter-fill" style="width:34%"></div></div>
+              <div class="score-breakdown">skills 25% · semantic 43%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Reinforcement Learning</span><span class='pill pill-skill'>Deep Learning</span><span class='pill pill-skill'>Generative AI</span><span class='pill pill-skill'>LLM</span><span class='pill pill-skill'>VLM</span><span class='pill pill-skill'>RLHF</span><span class='pill pill-skill'>Python</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.co.uk/jobs/companies/gocardless/senior-data-scientist-payment-intelligence-london-216917" target="_blank" rel="noopener">Senior Data Scientist, Payment Intelligence</a></h2>
+              <p class="meta">Gocardless · London · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">33%</div>
+              <div class="meter"><div class="meter-fill" style="width:33%"></div></div>
+              <div class="score-breakdown">skills 29% · semantic 37%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>SQL</span><span class='pill pill-skill'>BigQuery</span><span class='pill pill-skill'>Google Cloud Platform</span><span class='pill pill-skill'>Vertex AI</span><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Data Science</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.co.uk/jobs/companies/waymo/staff-machine-learning-engineer-london-282186" target="_blank" rel="noopener">Staff Machine Learning Engineer</a></h2>
+              <p class="meta">Waymo · London · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">33%</div>
+              <div class="meter"><div class="meter-fill" style="width:33%"></div></div>
+              <div class="score-breakdown">skills 22% · semantic 43%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Reinforcement Learning</span><span class='pill pill-skill'>Deep Learning</span><span class='pill pill-skill'>Generative AI</span><span class='pill pill-skill'>LLM</span><span class='pill pill-skill'>VLM</span><span class='pill pill-skill'>RLHF</span><span class='pill pill-skill'>Python</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.co.uk/jobs/companies/waymo/staff-machine-learning-engineer-london-65974" target="_blank" rel="noopener">Staff Machine Learning Engineer</a></h2>
+              <p class="meta">Waymo · London · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">33%</div>
+              <div class="meter"><div class="meter-fill" style="width:33%"></div></div>
+              <div class="score-breakdown">skills 22% · semantic 43%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Reinforcement Learning</span><span class='pill pill-skill'>Deep Learning</span><span class='pill pill-skill'>Generative AI</span><span class='pill pill-skill'>LLM</span><span class='pill pill-skill'>VLM</span><span class='pill pill-skill'>RLHF</span><span class='pill pill-skill'>Python</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.com/jobs/companies/clera/ai-llm-engineer-munich-395370" target="_blank" rel="noopener">AI/LLM Engineer</a></h2>
+              <p class="meta">Clera · Munich, Germany · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">32%</div>
+              <div class="meter"><div class="meter-fill" style="width:32%"></div></div>
+              <div class="score-breakdown">skills 5% · semantic 59%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill'>€90,000–€200,000/yr</span><span class='pill'>visa sponsorship</span><span class='pill pill-skill'>NLP</span><span class='pill pill-skill'>LLMs</span><span class='pill pill-skill'>Embeddings</span><span class='pill pill-skill'>ML</span><span class='pill pill-skill'>AI agents</span><span class='pill pill-skill'>Data pipelines</span><span class='pill pill-skill'>PostgreSQL</span><span class='pill pill-skill'>Vector databases</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.com/jobs/companies/clera/remote-data-scientist-agent-evaluations-quality-434210" target="_blank" rel="noopener">Data Scientist — Agent Evaluations & Quality</a></h2>
+              <p class="meta">Clera · remote · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">31%</div>
+              <div class="meter"><div class="meter-fill" style="width:31%"></div></div>
+              <div class="score-breakdown">skills 25% · semantic 38%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>SQL</span><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>LLM evaluation</span><span class='pill pill-skill'>Data Science</span><span class='pill pill-skill'>Statistical analysis</span><span class='pill pill-skill'>Experimental design</span><span class='pill pill-skill'>AI agents</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.com/jobs/companies/clera/remote-data-scientist-agent-evaluations-quality-434210" target="_blank" rel="noopener">Data Scientist — Agent Evaluations & Quality</a></h2>
+              <p class="meta">Clera · remote · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">31%</div>
+              <div class="meter"><div class="meter-fill" style="width:31%"></div></div>
+              <div class="score-breakdown">skills 25% · semantic 38%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>SQL</span><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>LLM evaluation</span><span class='pill pill-skill'>Data Science</span><span class='pill pill-skill'>Statistical analysis</span><span class='pill pill-skill'>Experimental design</span><span class='pill pill-skill'>AI agents</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.co.uk/jobs/companies/waymo/senior-machine-learning-engineer-london-uk-lon-40br-simulation-7xw-207903" target="_blank" rel="noopener">Senior Machine Learning Engineer / Simulation</a></h2>
+              <p class="meta">Waymo · London · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">30%</div>
+              <div class="meter"><div class="meter-fill" style="width:30%"></div></div>
+              <div class="score-breakdown">skills 17% · semantic 43%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Deep Learning</span><span class='pill pill-skill'>Foundation Models</span><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>Simulation</span><span class='pill pill-skill'>Large Language Models</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.co.uk/jobs/companies/waymo/senior-machine-learning-engineer-london-uk-lon-40br-simulation-7xw-98699" target="_blank" rel="noopener">Senior Machine Learning Engineer / Simulation</a></h2>
+              <p class="meta">Waymo · London, UK · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">30%</div>
+              <div class="meter"><div class="meter-fill" style="width:30%"></div></div>
+              <div class="score-breakdown">skills 17% · semantic 43%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Deep Learning</span><span class='pill pill-skill'>Foundation Models</span><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>Simulation</span><span class='pill pill-skill'>Large Language Models</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.co.uk/jobs/companies/waymo/senior-machine-learning-engineer-simulation-london-184282" target="_blank" rel="noopener">Senior Machine Learning Engineer, Simulation</a></h2>
+              <p class="meta">Waymo · London · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">30%</div>
+              <div class="meter"><div class="meter-fill" style="width:30%"></div></div>
+              <div class="score-breakdown">skills 20% · semantic 39%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Deep Learning</span><span class='pill pill-skill'>Foundation Models</span><span class='pill pill-skill'>Simulation</span><span class='pill pill-skill'>Python</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.co.uk/jobs/companies/waymo/staff-machine-learning-engineer-simulation-london-266087" target="_blank" rel="noopener">Staff Machine Learning Engineer, Simulation</a></h2>
+              <p class="meta">Waymo · London · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">29%</div>
+              <div class="meter"><div class="meter-fill" style="width:29%"></div></div>
+              <div class="score-breakdown">skills 20% · semantic 38%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Deep Learning</span><span class='pill pill-skill'>Foundation Models</span><span class='pill pill-skill'>Simulation</span><span class='pill pill-skill'>Python</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.co.uk/jobs/companies/waymo/staff-machine-learning-engineer-simulation-london-361609" target="_blank" rel="noopener">Staff Machine Learning Engineer, Simulation</a></h2>
+              <p class="meta">Waymo · London · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">27%</div>
+              <div class="meter"><div class="meter-fill" style="width:27%"></div></div>
+              <div class="score-breakdown">skills 17% · semantic 38%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Deep Learning</span><span class='pill pill-skill'>Reinforcement Learning</span><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>Data Infrastructure</span><span class='pill pill-skill'>Simulation</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.co.uk/jobs/companies/waymo/staff-machine-learning-engineer-tlm-driver-understanding-and-evaluation-london-44117" target="_blank" rel="noopener">Staff Machine Learning Engineer (TLM), Driver Understanding and Evaluation</a></h2>
+              <p class="meta">Waymo · London · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">27%</div>
+              <div class="meter"><div class="meter-fill" style="width:27%"></div></div>
+              <div class="score-breakdown">skills 20% · semantic 35%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Machine Learning</span><span class='pill pill-skill'>Simulation</span><span class='pill pill-skill'>Foundation Models</span><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>Data Systems</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <div>
+              <span class='badge badge-fulltime'>Full-time</span>
+              <h2><a href="https://www.arbeitnow.com/jobs/companies/clera/remote-senior-geospatial-machine-learning-engineer-476220" target="_blank" rel="noopener">Senior Geospatial Machine Learning Engineer</a></h2>
+              <p class="meta">Clera · remote · <span class="source">arbeitnow</span></p>
+            </div>
+            <div class="score-block">
+              <div class="score-value">25%</div>
+              <div class="meter"><div class="meter-fill" style="width:25%"></div></div>
+              <div class="score-breakdown">skills 6% · semantic 43%</div>
+            </div>
+          </div>
+          <div class="pills"><span class='pill pill-skill'>Python</span><span class='pill pill-skill'>GDAL</span><span class='pill pill-skill'>Rasterio</span><span class='pill pill-skill'>Shapely</span><span class='pill pill-skill'>Fiona</span><span class='pill pill-skill'>GeoPandas</span><span class='pill pill-skill'>NumPy</span><span class='pill pill-skill'>SciPy</span></div>
+        </article>
+  <footer>Scored against job_profile.py — skills overlap × 50% + embedding similarity × 50%.</footer>
+</div>
+</body>
+</html>

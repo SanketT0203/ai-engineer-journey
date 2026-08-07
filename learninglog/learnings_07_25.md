@@ -3,3 +3,5 @@
 
 --clustering is also an essential part which is important to cluster the embeddings using kmeans and on top of this add cosine similarity , which makes it eaier to look at the relevant cluster instead running cosine similarity on every emedding.
 
+-- Searched these learning logs ,embedding these and using semantic search, but the results I got were not upto the mark   and the cause turned out to be not having docs chunked as my docs dont just contain one topic.
+OK so chunking got much muuch better results .....

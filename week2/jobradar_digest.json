@@ -1,0 +1,595 @@
+[
+  {
+    "title": "Lead AI Engineer",
+    "company": "All Your BI",
+    "location": "Berlin",
+    "seniority": "lead",
+    "skills": [
+      "AI",
+      "GenAI",
+      "LLM",
+      "RAG",
+      "Machine Learning",
+      "Production Systems",
+      "Observability",
+      "Prompt Engineering"
+    ],
+    "salary_min": 88800.0,
+    "salary_max": 110400.0,
+    "german_required": null,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.com/jobs/companies/all-your-bi/lead-ai-engineer-berlin-18369",
+    "score": 0.4259084463119507,
+    "skills_overlap": 0.375,
+    "matched_skills": [
+      "prompt engineering",
+      "LLM",
+      "RAG"
+    ],
+    "embedding_similarity": 0.47681689262390137,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "(Senior) GenAI Engineer",
+    "company": "capco",
+    "location": "Frankfurt am Main, Düsseldorf, Berlin",
+    "seniority": "senior",
+    "skills": [
+      "Python",
+      "GenAI",
+      "LLMs",
+      "Vector Search",
+      "Angular",
+      "React",
+      "Document Processing",
+      "Embeddings"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": true,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.com/jobs/companies/capco/senior-genai-engineer-84728",
+    "score": 0.4216082841157913,
+    "skills_overlap": 0.375,
+    "matched_skills": [
+      "Python",
+      "vector search",
+      "embeddings"
+    ],
+    "embedding_similarity": 0.46821656823158264,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Applied AI Engineer – AI & Automation",
+    "company": "Clera",
+    "location": "Berlin, Germany",
+    "seniority": "mid",
+    "skills": [
+      "TypeScript",
+      "Python",
+      "AI",
+      "Automation",
+      "Machine Learning"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": false,
+    "visa_sponsorship": false,
+    "url": "https://www.arbeitnow.com/jobs/companies/clera/applied-ai-engineer-ai-automation-berlin-228748",
+    "score": 0.35115126371383665,
+    "skills_overlap": 0.2,
+    "matched_skills": [
+      "Python"
+    ],
+    "embedding_similarity": 0.5023025274276733,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Applied AI Engineer – AI & Automation",
+    "company": "Clera",
+    "location": "Berlin, Germany",
+    "seniority": "mid",
+    "skills": [
+      "TypeScript",
+      "Python",
+      "AI",
+      "Automation",
+      "Machine Learning"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": false,
+    "visa_sponsorship": false,
+    "url": "https://www.arbeitnow.com/jobs/companies/clera/applied-ai-engineer-ai-automation-berlin-228748",
+    "score": 0.35115126371383665,
+    "skills_overlap": 0.2,
+    "matched_skills": [
+      "Python"
+    ],
+    "embedding_similarity": 0.5023025274276733,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "ML Engineer, Agents & Reasoning",
+    "company": "Clera",
+    "location": "Berlin",
+    "seniority": "mid",
+    "skills": [
+      "Machine Learning",
+      "Agentic AI",
+      "Planning",
+      "Decision-making systems",
+      "Scientific data modeling",
+      "Python",
+      "Robotics",
+      "Materials science"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": null,
+    "visa_sponsorship": false,
+    "url": "https://www.arbeitnow.com/jobs/companies/clera/ml-engineer-agents-reasoning-berlin-123289",
+    "score": 0.3396420031785965,
+    "skills_overlap": 0.25,
+    "matched_skills": [
+      "Python",
+      "agentic AI"
+    ],
+    "embedding_similarity": 0.429284006357193,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "ML Engineer, Agents & Reasoning",
+    "company": "Clera",
+    "location": "Berlin",
+    "seniority": "mid",
+    "skills": [
+      "Machine Learning",
+      "Agentic AI",
+      "Planning",
+      "Decision-making systems",
+      "Scientific data modeling",
+      "Python",
+      "Robotics",
+      "Materials science"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": null,
+    "visa_sponsorship": false,
+    "url": "https://www.arbeitnow.com/jobs/companies/clera/ml-engineer-agents-reasoning-berlin-123289",
+    "score": 0.3396420031785965,
+    "skills_overlap": 0.25,
+    "matched_skills": [
+      "Python",
+      "agentic AI"
+    ],
+    "embedding_similarity": 0.429284006357193,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Waymo",
+    "location": "London",
+    "seniority": "senior",
+    "skills": [
+      "Machine Learning",
+      "Reinforcement Learning",
+      "Deep Learning",
+      "Generative AI",
+      "LLM",
+      "VLM",
+      "RLHF",
+      "Python"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": null,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/waymo/machine-learning-engineer-london-134903",
+    "score": 0.3394893407821655,
+    "skills_overlap": 0.25,
+    "matched_skills": [
+      "Python",
+      "LLM"
+    ],
+    "embedding_similarity": 0.42897868156433105,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Senior Data Scientist, Payment Intelligence",
+    "company": "Gocardless",
+    "location": "London",
+    "seniority": "senior",
+    "skills": [
+      "Python",
+      "SQL",
+      "BigQuery",
+      "Google Cloud Platform",
+      "Vertex AI",
+      "Machine Learning",
+      "Data Science"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": false,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/gocardless/senior-data-scientist-payment-intelligence-london-216917",
+    "score": 0.32635689633233206,
+    "skills_overlap": 0.2857142857142857,
+    "matched_skills": [
+      "Python",
+      "data science"
+    ],
+    "embedding_similarity": 0.3669995069503784,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Staff Machine Learning Engineer",
+    "company": "Waymo",
+    "location": "London",
+    "seniority": "senior",
+    "skills": [
+      "Machine Learning",
+      "Reinforcement Learning",
+      "Deep Learning",
+      "Generative AI",
+      "LLM",
+      "VLM",
+      "RLHF",
+      "Python",
+      "Simulation"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": null,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/waymo/staff-machine-learning-engineer-london-282186",
+    "score": 0.3259296334452099,
+    "skills_overlap": 0.2222222222222222,
+    "matched_skills": [
+      "Python",
+      "LLM"
+    ],
+    "embedding_similarity": 0.42963704466819763,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Staff Machine Learning Engineer",
+    "company": "Waymo",
+    "location": "London",
+    "seniority": "senior",
+    "skills": [
+      "Machine Learning",
+      "Reinforcement Learning",
+      "Deep Learning",
+      "Generative AI",
+      "LLM",
+      "VLM",
+      "RLHF",
+      "Python",
+      "Simulation"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": null,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/waymo/staff-machine-learning-engineer-london-65974",
+    "score": 0.3259296334452099,
+    "skills_overlap": 0.2222222222222222,
+    "matched_skills": [
+      "Python",
+      "LLM"
+    ],
+    "embedding_similarity": 0.42963704466819763,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "AI/LLM Engineer",
+    "company": "Clera",
+    "location": "Munich, Germany",
+    "seniority": "mid",
+    "skills": [
+      "NLP",
+      "LLMs",
+      "Embeddings",
+      "ML",
+      "AI agents",
+      "Data pipelines",
+      "PostgreSQL",
+      "Vector databases",
+      "Weaviate",
+      "Pinecone",
+      "RLHF",
+      "DPO",
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "Terraform"
+    ],
+    "salary_min": 90000.0,
+    "salary_max": 200000.0,
+    "german_required": false,
+    "visa_sponsorship": true,
+    "url": "https://www.arbeitnow.com/jobs/companies/clera/ai-llm-engineer-munich-395370",
+    "score": 0.31886938356217887,
+    "skills_overlap": 0.047619047619047616,
+    "matched_skills": [
+      "embeddings"
+    ],
+    "embedding_similarity": 0.5901197195053101,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Data Scientist — Agent Evaluations & Quality",
+    "company": "Clera",
+    "location": "remote",
+    "seniority": "mid",
+    "skills": [
+      "Python",
+      "SQL",
+      "Machine Learning",
+      "LLM evaluation",
+      "Data Science",
+      "Statistical analysis",
+      "Experimental design",
+      "AI agents"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": null,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.com/jobs/companies/clera/remote-data-scientist-agent-evaluations-quality-434210",
+    "score": 0.31471675634384155,
+    "skills_overlap": 0.25,
+    "matched_skills": [
+      "Python",
+      "data science"
+    ],
+    "embedding_similarity": 0.3794335126876831,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Data Scientist — Agent Evaluations & Quality",
+    "company": "Clera",
+    "location": "remote",
+    "seniority": "mid",
+    "skills": [
+      "Python",
+      "SQL",
+      "Machine Learning",
+      "LLM evaluation",
+      "Data Science",
+      "Statistical analysis",
+      "Experimental design",
+      "AI agents"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": null,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.com/jobs/companies/clera/remote-data-scientist-agent-evaluations-quality-434210",
+    "score": 0.31471675634384155,
+    "skills_overlap": 0.25,
+    "matched_skills": [
+      "Python",
+      "data science"
+    ],
+    "embedding_similarity": 0.3794335126876831,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Senior Machine Learning Engineer / Simulation",
+    "company": "Waymo",
+    "location": "London",
+    "seniority": "senior",
+    "skills": [
+      "Machine Learning",
+      "Deep Learning",
+      "Foundation Models",
+      "Python",
+      "Simulation",
+      "Large Language Models"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": false,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/waymo/senior-machine-learning-engineer-london-uk-lon-40br-simulation-7xw-207903",
+    "score": 0.2992612322171529,
+    "skills_overlap": 0.16666666666666666,
+    "matched_skills": [
+      "Python"
+    ],
+    "embedding_similarity": 0.43185579776763916,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Senior Machine Learning Engineer / Simulation",
+    "company": "Waymo",
+    "location": "London, UK",
+    "seniority": "senior",
+    "skills": [
+      "Machine Learning",
+      "Deep Learning",
+      "Foundation Models",
+      "Python",
+      "Simulation",
+      "Large Language Models"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": false,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/waymo/senior-machine-learning-engineer-london-uk-lon-40br-simulation-7xw-98699",
+    "score": 0.2992612322171529,
+    "skills_overlap": 0.16666666666666666,
+    "matched_skills": [
+      "Python"
+    ],
+    "embedding_similarity": 0.43185579776763916,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Senior Machine Learning Engineer, Simulation",
+    "company": "Waymo",
+    "location": "London",
+    "seniority": "senior",
+    "skills": [
+      "Machine Learning",
+      "Deep Learning",
+      "Foundation Models",
+      "Simulation",
+      "Python"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": false,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/waymo/senior-machine-learning-engineer-simulation-london-184282",
+    "score": 0.2970250904560089,
+    "skills_overlap": 0.2,
+    "matched_skills": [
+      "Python"
+    ],
+    "embedding_similarity": 0.3940501809120178,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Staff Machine Learning Engineer, Simulation",
+    "company": "Waymo",
+    "location": "London",
+    "seniority": "senior",
+    "skills": [
+      "Machine Learning",
+      "Deep Learning",
+      "Foundation Models",
+      "Simulation",
+      "Python"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": false,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/waymo/staff-machine-learning-engineer-simulation-london-266087",
+    "score": 0.2883007287979126,
+    "skills_overlap": 0.2,
+    "matched_skills": [
+      "Python"
+    ],
+    "embedding_similarity": 0.3766014575958252,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Staff Machine Learning Engineer, Simulation",
+    "company": "Waymo",
+    "location": "London",
+    "seniority": "senior",
+    "skills": [
+      "Machine Learning",
+      "Deep Learning",
+      "Reinforcement Learning",
+      "Python",
+      "Data Infrastructure",
+      "Simulation"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": false,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/waymo/staff-machine-learning-engineer-simulation-london-361609",
+    "score": 0.2733369668324788,
+    "skills_overlap": 0.16666666666666666,
+    "matched_skills": [
+      "Python"
+    ],
+    "embedding_similarity": 0.380007266998291,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Staff Machine Learning Engineer (TLM), Driver Understanding and Evaluation",
+    "company": "Waymo",
+    "location": "London",
+    "seniority": "senior",
+    "skills": [
+      "Machine Learning",
+      "Simulation",
+      "Foundation Models",
+      "Python",
+      "Data Systems"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": false,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.co.uk/jobs/companies/waymo/staff-machine-learning-engineer-tlm-driver-understanding-and-evaluation-london-44117",
+    "score": 0.272804519534111,
+    "skills_overlap": 0.2,
+    "matched_skills": [
+      "Python"
+    ],
+    "embedding_similarity": 0.34560903906822205,
+    "source": "arbeitnow",
+    "student_eligible": false
+  },
+  {
+    "title": "Senior Geospatial Machine Learning Engineer",
+    "company": "Clera",
+    "location": "remote",
+    "seniority": "senior",
+    "skills": [
+      "Python",
+      "GDAL",
+      "Rasterio",
+      "Shapely",
+      "Fiona",
+      "GeoPandas",
+      "NumPy",
+      "SciPy",
+      "scikit-learn",
+      "Pandas",
+      "PyTorch",
+      "TensorFlow",
+      "QGIS",
+      "Dagster",
+      "Sentry",
+      "Grafana"
+    ],
+    "salary_min": null,
+    "salary_max": null,
+    "german_required": null,
+    "visa_sponsorship": null,
+    "url": "https://www.arbeitnow.com/jobs/companies/clera/remote-senior-geospatial-machine-learning-engineer-476220",
+    "score": 0.24698883295059204,
+    "skills_overlap": 0.0625,
+    "matched_skills": [
+      "Python"
+    ],
+    "embedding_similarity": 0.4314776659011841,
+    "source": "arbeitnow",
+    "student_eligible": false
+  }
+]

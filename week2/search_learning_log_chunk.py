@@ -35,6 +35,16 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 MONTHS = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 DATE_IN_NAME = re.compile(r"(\d{1,2})_(\d{1,2})")
 
+# A day's note often covers more than one topic in the same file (e.g. one
+# paragraph on top_p, a separate paragraph on counting tokens). Embedding
+# the WHOLE file as a single vector blurs those topics into one averaged
+# representation, and printing "the file" as a result shows you whatever
+# text happens to come first — not necessarily the part that matched. So
+# each file gets split into paragraphs (blank-line separated) and each
+# paragraph is embedded and searched independently, same idea as chunking
+# a document before indexing it in a real RAG pipeline.
+MIN_CHUNK_CHARS = 20
+
 
 def resolve_log_dir(name=LOG_DIR):
     """Search, in order: next to this script, one level up, two levels up,
@@ -64,7 +74,7 @@ def resolve_log_dir(name=LOG_DIR):
 
 
 def label_from_filename(filename):
-    """learnings_07_08.txt -> 'Jul 08'. Falls back to the raw filename if it
+    """learnings_07_08.md -> 'Jul 08'. Falls back to the raw filename if it
     doesn't match the MM_DD pattern, so a differently-named file still works,
     it just won't get a pretty date label."""
     match = DATE_IN_NAME.search(filename)
@@ -76,10 +86,12 @@ def label_from_filename(filename):
 
 
 def load_notes(log_dir=None):
-    """One note per file in learninglog/. Picks up .md, .txt, and — just in
-    case some of yours have no extension at all — any file whose name
-    starts with 'learnings_'. Whatever the file contains is embedded as-is;
-    no title line or markdown structure is assumed or stripped out."""
+    """One note per PARAGRAPH across every file in learninglog/. Picks up
+    .md, .txt, and — just in case some of yours have no extension at all —
+    any file whose name starts with 'learnings_'. Each file is split on
+    blank lines; each resulting paragraph becomes its own searchable chunk,
+    labeled e.g. 'Jul 14 #2' if a file has more than one. No title line or
+    markdown structure is otherwise assumed or stripped out."""
     log_dir = log_dir or resolve_log_dir()
     paths = set(glob.glob(os.path.join(log_dir, "*.md")))
     paths |= set(glob.glob(os.path.join(log_dir, "*.txt")))
@@ -92,7 +104,16 @@ def load_notes(log_dir=None):
         if not text:
             continue  # skip empty files rather than embedding nothing
         filename = os.path.basename(path)
-        notes.append({"path": path, "label": label_from_filename(filename), "text": text})
+        label = label_from_filename(filename)
+
+        paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text)]
+        paragraphs = [p for p in paragraphs if len(p) >= MIN_CHUNK_CHARS]
+        if not paragraphs:
+            paragraphs = [text]  # no blank-line breaks at all -> whole file is one chunk
+
+        for i, para in enumerate(paragraphs):
+            chunk_label = label if len(paragraphs) == 1 else f"{label} #{i + 1}"
+            notes.append({"path": path, "label": chunk_label, "text": para})
     return notes
 
 
@@ -103,7 +124,7 @@ def semantic_search(query, notes, embeddings, model, top_k=3):
     return ranked[:top_k]
 
 
-def print_result(note, score, snippet_chars=160):
+def print_result(note, score, snippet_chars=220):
     snippet = note["text"].replace("\n", " ")
     snippet = snippet[:snippet_chars] + ("…" if len(snippet) > snippet_chars else "")
     print(f"  {score:.3f}  [{note['label']}] ({os.path.basename(note['path'])})")
@@ -131,7 +152,7 @@ if __name__ == "__main__":
     embeddings = model.encode(texts, normalize_embeddings=True)
     print(f"Embedded {len(embeddings)} notes into {embeddings.shape[1]}-dim vectors.\n")
 
-    
+    # Try your own queries here — this is just a starting example.
     queries = ["how do I count tokens"]
     for q in queries:
         print(f"Query: \"{q}\"")
