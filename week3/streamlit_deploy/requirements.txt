@@ -1,0 +1,6 @@
+streamlit>=1.38
+pypdf>=4.0
+sentence-transformers>=3.0
+qdrant-client>=1.9
+anthropic>=0.34
+numpy>=1.26
