@@ -1,0 +1,22 @@
+[
+  {"question": "Wie viele Tage Zeit habe ich fuer die Anmeldung?", "expected_source": "anmeldung_merkblatt.pdf"},
+  {"question": "What documents do I need to register my address?", "expected_source": "anmeldung_merkblatt.pdf"},
+  {"question": "What is a Wohnungsgeberbestaetigung?", "expected_source": "anmeldung_merkblatt.pdf"},
+  {"question": "Can I register my new address online instead of in person?", "expected_source": "anmeldung_merkblatt.pdf"},
+  {"question": "Kostet die Anmeldung eine Gebuehr?", "expected_source": "anmeldung_merkblatt.pdf"},
+  {"question": "What extra paperwork do I need if I have more than one residence?", "expected_source": "anmeldung_merkblatt.pdf"},
+  {"question": "Where do I physically go to register my address in person?", "expected_source": "anmeldung_merkblatt.pdf"},
+  {"question": "Wie hoch ist das Mindestgehalt fuer die Blaue Karte?", "expected_source": "blue_card_merkblatt.pdf"},
+  {"question": "What's the minimum salary for shortage occupations under the Blue Card?", "expected_source": "blue_card_merkblatt.pdf"},
+  {"question": "How long does a Blue Card application take to process?", "expected_source": "blue_card_merkblatt.pdf"},
+  {"question": "Welche Dokumente brauche ich fuer die Blaue Karte?", "expected_source": "blue_card_merkblatt.pdf"},
+  {"question": "Do I need a university degree to qualify for this visa?", "expected_source": "blue_card_merkblatt.pdf"},
+  {"question": "Where and how do I actually submit my Blue Card application?", "expected_source": "blue_card_merkblatt.pdf"},
+  {"question": "What is the lower salary threshold for recent graduates?", "expected_source": "blue_card_merkblatt.pdf"},
+  {"question": "Wie viel kostet der Rundfunkbeitrag pro Monat?", "expected_source": "rundfunkbeitrag_info.pdf"},
+  {"question": "Can I be exempted from the broadcasting fee if I receive BAfoeG?", "expected_source": "rundfunkbeitrag_info.pdf"},
+  {"question": "Does everyone in a shared flat have to pay the fee separately?", "expected_source": "rundfunkbeitrag_info.pdf"},
+  {"question": "Wie beantrage ich eine Befreiung vom Rundfunkbeitrag?", "expected_source": "rundfunkbeitrag_info.pdf"},
+  {"question": "Is the broadcasting fee charged per person or per household?", "expected_source": "rundfunkbeitrag_info.pdf"},
+  {"question": "Do I still have to pay if I don't own a TV or radio?", "expected_source": "rundfunkbeitrag_info.pdf"}
+]
