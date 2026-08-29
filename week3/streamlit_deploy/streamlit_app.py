@@ -57,8 +57,19 @@ FOOTER_SEP = "\n\n---\n"
 # gotcha as the earlier ".env doesn't auto-load into os.environ" lesson --
 # a secrets store existing isn't the same as a specific library actually
 # being able to read it.
-if hasattr(st, "secrets") and "ANTHROPIC_API_KEY" in st.secrets and not os.environ.get("ANTHROPIC_API_KEY"):
-    os.environ["ANTHROPIC_API_KEY"] = st.secrets["ANTHROPIC_API_KEY"]
+#
+# Wrapped in try/except on purpose: st.secrets raises
+# StreamlitSecretNotFoundError on ANY access -- even a plain `in` check --
+# when no secrets have been configured for this app at all yet, not just
+# an empty dict the way a normal Python dict would behave. Without this
+# guard, that exception crashes the app before main() ever runs, instead
+# of falling through to the friendlier "Missing API key" message main()
+# shows further down.
+try:
+    if "ANTHROPIC_API_KEY" in st.secrets and not os.environ.get("ANTHROPIC_API_KEY"):
+        os.environ["ANTHROPIC_API_KEY"] = st.secrets["ANTHROPIC_API_KEY"]
+except Exception:
+    pass  # no secrets configured yet -- main()'s own check below handles this cleanly
 
 
 @st.cache_resource(show_spinner="Loading models and indexing documents (first load only)...")
