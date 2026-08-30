@@ -30,6 +30,25 @@ for exactly why root-level matters).
 
 import os
 
+# Community Cloud always runs the app with the working directory set to the
+# REPO ROOT, never the folder the main file lives in -- confirmed against
+# Streamlit's own docs. Since this app is deployed from a nested path
+# (week3/streamlit_deploy/streamlit_app.py inside ai-engineer-journey), any
+# plain relative path like "docs" would actually be looked up at the repo
+# root (ai-engineer-journey/docs), which doesn't exist -- that's exactly
+# why the app reported "Indexed 0 chunks": build_index() -> load_pdf_pages()
+# found nothing there, silently, and returned an empty list instead of
+# erroring. Anchoring every relative path to THIS FILE's own directory
+# (not os.getcwd()) makes the app work the same regardless of where it's
+# run from -- locally from the repo root, locally from inside
+# streamlit_deploy/, or on Community Cloud. See DEPLOY.md.
+APP_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# CONTEXT_LOG_PATH is read by rag_chat.py as a module-level default the
+# moment it's imported, so this has to be set BEFORE the `from rag_chat
+# import ...` line below, not after.
+os.environ.setdefault("CONTEXT_LOG_PATH", os.path.join(APP_DIR, "context_tokens_log.csv"))
+
 import streamlit as st
 from qdrant_client import QdrantClient
 from sentence_transformers import CrossEncoder, SentenceTransformer
@@ -46,8 +65,8 @@ from rag_chat import (
     retrieve,
 )
 
-DOCS_FOLDER = "docs"
-QDRANT_PATH = os.environ.get("QDRANT_PATH", "qdrant_data")  # embedded, on-disk for this run only -- no Docker either way
+DOCS_FOLDER = os.path.join(APP_DIR, "docs")
+QDRANT_PATH = os.environ.get("QDRANT_PATH", os.path.join(APP_DIR, "qdrant_data"))  # embedded, on-disk for this run only -- no Docker either way
 FOOTER_SEP = "\n\n---\n"
 
 # Streamlit's secrets.toml auto-exposes ROOT-LEVEL keys as os.environ too --
